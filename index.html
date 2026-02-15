@@ -30,40 +30,35 @@
             max-width: 440px; 
             width: 100%; 
             background: var(--card); 
-            padding: 40px 30px; 
+            padding: 50px 30px; 
             text-align: center;
             border: 1px solid #f0f0f0;
             box-sizing: border-box;
         }
 
-        h1 { font-size: 26px; margin: 0 0 10px; font-weight: 500; }
+        h1 { font-size: 28px; margin: 0 0 10px; font-weight: 500; }
 
         .subtitle { 
             color: var(--acc); 
-            font-size: 15px; 
-            font-style: italic;
-            margin-bottom: 30px; 
-        }
-
-        .bio { 
             font-size: 16px; 
-            line-height: 1.6; 
-            margin-bottom: 25px; 
+            font-style: italic;
+            margin-bottom: 40px; 
         }
 
         ul { 
             text-align: left; 
-            margin: 0 auto 30px; 
+            margin: 0 auto 40px; 
             padding: 0; 
             list-style: none;
+            max-width: 100%;
         }
 
         li { 
-            font-size: 14px; 
-            margin-bottom: 12px; 
+            font-size: 14.5px; 
+            margin-bottom: 15px; 
             padding-left: 20px; 
             position: relative; 
-            line-height: 1.4;
+            line-height: 1.5;
             color: var(--sec);
         }
 
@@ -80,33 +75,53 @@
             padding-bottom: 3px;
             font-size: 13px; 
             color: var(--sec); 
-            margin-bottom: 35px; 
+            margin-bottom: 40px; 
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .btn { 
-            display: flex; /* Изменено на flex для центровки текста */
+            display: flex; 
             align-items: center;
             justify-content: center;
-            background: var(--acc); 
-            color: white; 
             text-decoration: none; 
             padding: 18px 10px; 
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 14px;
+            font-weight: 600;
             transition: 0.3s; 
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
-            line-height: 1.2;
-            word-wrap: break-word; /* Позволяет переносить слова если нужно */
+            box-sizing: border-box;
         }
 
-        .btn:hover { background: #46627a; }
+        .btn-main {
+            background: var(--acc); 
+            color: white; 
+            border: 1px solid var(--acc);
+        }
+
+        .btn-main:hover { background: #46627a; border-color: #46627a; }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--acc);
+            border: 1px solid var(--acc);
+        }
+
+        .btn-outline:hover {
+            background: rgba(90, 125, 154, 0.05);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Вадим Лосев</h1>
         <div class="subtitle">Психолог и гештальт-терапевт</div>
+
         <ul>
             <li>Бакалавриат Московского Института Психоанализа (2020-2025)</li>
             <li>Вторая ступень Московского Института Гештальта и Психодрамы (2020-2024)</li>
@@ -115,7 +130,10 @@
 
         <div class="tag">📍 Работаю онлайн из Израиля</div>
         
-        <a href="https://t.me/talkwithvadim" class="btn">НАПИСАТЬ В TELEGRAM</a>
+        <div class="btn-group">
+            <a href="https://t.me/talkwithvadim" class="btn btn-main">Написать в Telegram</a>
+            <a href="mailto:talkwithvadim@fastmail.com" class="btn btn-outline">Написать на Email</a>
+        </div>
     </div>
 </body>
 </html>

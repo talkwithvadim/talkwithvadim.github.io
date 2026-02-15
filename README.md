@@ -1,1 +1,0 @@
-# talkwithvadim.github.io

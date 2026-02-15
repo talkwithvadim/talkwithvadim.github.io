@@ -3,121 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вадим Лосев | Гештальт-терапевт</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <title>Вадим Лосев | Психолог</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #f8f9fa;
-            --text-color: #2d3436;
-            --accent-color: #5a7d9a; /* Приглушенный сине-стальной */
-            --card-bg: #ffffff;
-            --secondary-text: #636e72;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 450px;
-            width: 100%;
-            background: var(--card-bg);
-            padding: 40px 30px;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 3px solid var(--bg-color);
-        }
-
-        h1 {
-            font-family: 'Lora', serif;
-            font-size: 24px;
-            margin: 10px 0 5px 0;
-            font-weight: 500;
-        }
-
-        .subtitle {
-            color: var(--accent-color);
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            letter-spacing: 0.5px;
-        }
-
-        .bio {
-            font-size: 15px;
-            line-height: 1.6;
-            color: var(--secondary-text);
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .education-list {
-            text-align: left;
-            margin-bottom: 30px;
-            padding: 0;
-            list-style: none;
-        }
-
-        .education-item {
-            font-size: 14px;
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
-            color: var(--text-color);
-        }
-
-        .education-item::before {
-            content: "•";
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        .location-tag {
-            display: inline-block;
-            background: #e9ecef;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 13px;
-            color: var(--secondary-text);
-            margin-bottom: 30px;
-        }
-
-        .btn-tg {
-            display: block;
-            background-color: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 15px;
-            font-weight: 600;
-            transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 0 4px 15px rgba(90, 125, 154, 0.3);
-        }
-
-        .btn-tg:hover {
-            background-color: #4a6a85;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            margin-top: 30px;
-            font-size: 12px;
+        :root { --bg: #f8f9fa; --txt: #2d3436; --acc: #5a7d9a; --card: #ffffff; --sec: #636e72; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--txt); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .container { max-width: 400px; width: 100%; background: var(--card); padding: 35px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
+        h1 { font-family: 'Lora', serif; font-size: 24px; margin: 0 0 5px; font-weight: 500; }
+        .subtitle { color: var(--acc); font-size: 15px; font-weight: 600; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .bio { font-size: 15px; line-height: 1.5; color: var(--sec); margin-bottom: 20px; text-align: left; }
+        ul { text-align: left; margin: 0 0 25px; padding: 0; list-style: none; }
+        li { font-size: 14px; margin-bottom: 10px; padding-left: 20px; position: relative; }
+        li::before { content: "•"; color: var(--acc); position: absolute; left: 0; }
+        .tag { display: inline-block; background: #e9ecef; padding: 6px 14px; border-radius: 20px; font-size: 12px; color: var(--sec); margin-bottom: 25px; }
+        .btn { display: block; background: var(--acc); color: white; text-decoration: none; padding: 16px; border-radius: 12px; font-weight: 600; transition: 0.3s; }
+        .btn:hover { background: #4a6a85; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Вадим Лосев</h1>
+        <div class="subtitle">Гештальт-терапевт</div>
+        <ul>
+            <li>Бакалавриат МИП (2020-2025)</li>
+            <li>II ступень МИГИП (2020-2024)</li>
+            <li>Курс Жан-Мари Робина, 160 ч. (2023-2025)</li>
+        </ul>
+        <div class="tag">📍 Онлайн из Израиля</div>
+        <a href="https://t.me/talkwithvadim" class="btn">Написать в Telegram</a>
+    </div>
+</body>
+</html>

@@ -24,56 +24,46 @@
             align-items: center; 
             min-height: 100vh; 
             padding: 20px; 
-            -webkit-font-smoothing: antialiased;
         }
 
         .container { 
-            max-width: 480px; 
+            max-width: 440px; 
             width: 100%; 
             background: var(--card); 
-            padding: 50px 40px; 
-            border-radius: 2px; /* Убрал сильное скругление для более строгого вида */
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+            padding: 40px 30px; 
             text-align: center;
             border: 1px solid #f0f0f0;
+            box-sizing: border-box;
         }
 
-        h1 { 
-            font-size: 28px; 
-            margin: 0 0 10px; 
-            font-weight: 500; 
-            letter-spacing: 0.5px;
-        }
+        h1 { font-size: 26px; margin: 0 0 10px; font-weight: 500; }
 
         .subtitle { 
             color: var(--acc); 
-            font-size: 16px; 
+            font-size: 15px; 
             font-style: italic;
-            margin-bottom: 35px; 
+            margin-bottom: 30px; 
         }
 
         .bio { 
-            font-size: 17px; 
-            line-height: 1.7; 
-            color: var(--txt); 
-            margin-bottom: 30px; 
-            text-align: center; /* Центрировал для гармонии */
+            font-size: 16px; 
+            line-height: 1.6; 
+            margin-bottom: 25px; 
         }
 
         ul { 
             text-align: left; 
-            margin: 0 auto 35px; 
+            margin: 0 auto 30px; 
             padding: 0; 
             list-style: none;
-            max-width: 90%;
         }
 
         li { 
-            font-size: 15px; 
-            margin-bottom: 15px; 
-            padding-left: 25px; 
+            font-size: 14px; 
+            margin-bottom: 12px; 
+            padding-left: 20px; 
             position: relative; 
-            line-height: 1.5;
+            line-height: 1.4;
             color: var(--sec);
         }
 
@@ -88,33 +78,40 @@
             display: inline-block; 
             border-bottom: 1px solid var(--acc);
             padding-bottom: 3px;
-            font-size: 14px; 
+            font-size: 13px; 
             color: var(--sec); 
-            margin-bottom: 40px; 
+            margin-bottom: 35px; 
         }
 
         .btn { 
-            display: block; 
+            display: flex; /* Изменено на flex для центровки текста */
+            align-items: center;
+            justify-content: center;
             background: var(--acc); 
             color: white; 
             text-decoration: none; 
-            padding: 20px; 
-            font-size: 16px;
+            padding: 18px 10px; 
+            font-size: 15px;
             font-weight: 500;
-            transition: 0.4s; 
-            letter-spacing: 1px;
+            transition: 0.3s; 
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            line-height: 1.2;
+            word-wrap: break-word; /* Позволяет переносить слова если нужно */
         }
 
-        .btn:hover { 
-            background: #46627a; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+        .btn:hover { background: #46627a; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Вадим Лосев</h1>
         <div class="subtitle">Психолог и гештальт-терапевт</div>
+        
+        <div class="bio">
+            Бережная психологическая помощь, поиск внутренних опор и исследование механизмов контакта.
+        </div>
+
         <ul>
             <li>Бакалавриат Московского Института Психоанализа (2020-2025)</li>
             <li>Вторая ступень Московского Института Гештальта и Психодрамы (2020-2024)</li>
@@ -123,7 +120,7 @@
 
         <div class="tag">📍 Работаю онлайн из Израиля</div>
         
-        <a href="https://t.me/talkwithvadim" class="btn">ЗАПИСАТЬСЯ В TELEGRAM</a>
+        <a href="https://t.me/talkwithvadim" class="btn">НАПИСАТЬ В TELEGRAM</a>
     </div>
 </body>
 </html>
